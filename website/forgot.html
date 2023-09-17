@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Password Forgot</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: grey;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px #888888;
+    }
+
+    h4 {
+        color: red;
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        margin-top: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: Green;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h4><b>Have you forgotten your password?</b></h4>
+    <form method="post" action="Forgot">
+        Enter your Email:
+        <input type="email" class="form-control" placeholder="Enter your Email-Id" name="emailid" required>
+        <br>
+        Enter new Password:
+        <input type="password" class="form-control" placeholder="Enter your password" name="password" required>
+        <div class="text-center">
+            <br>
+            <input type="submit" value="Reset Password">        </div>
+    </form>
+</div>
+</body>
+</html>
